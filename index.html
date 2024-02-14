@@ -29,7 +29,8 @@
                             <span class="mt-3">cm</span>
                         </div>
                         <div>
-                            <p class="text-2xl">Area: <span id="triangle-area"></span><span> cm<sup>2</sup></span></p>
+                            <p class="text-2xl">Area: <span id="triangle-area">0</span>
+                              <span> cm<sup>2</sup></span></p>
                         </div>
                       <div class="card-actions justify-end">
                         <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
@@ -42,31 +43,52 @@
                     <div class="card-body">
                       <h2 class="card-title">Rectangle</h2>
                       <p class="text-center text-3xl">Area = w X l</p>
-                        <div class="flex space-x-4">
-                            <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm" placeholder="width" type="text" name="" id="">
+                          <div class="flex space-x-4">
+
+                            <input class="w-24 text-2xl p-2 rounded-sm" placeholder="width" type="text" name="" id="rectangle-width">
+
                             <span class="mt-3">cm</span>
-                            <input id="triangle-height" class="w-24 text-2xl p-2 rounded-sm" placeholder="length" type="text" name="" id="">
+
+                            <input class="w-24 text-2xl p-2 rounded-sm" placeholder="length" type="text" name="" id="rectangle-length">
+
                             <span class="mt-3">cm</span>
-                        </div>
+
+                          </div>
                         <div>
-                            <p class="text-2xl">Area: <span id="triangle-area"></span><span> cm<sup>2</sup></span></p>
+                            <p class="text-2xl">Area: <span id="rectangle-area">0</span>
+                              <span> cm<sup>2</sup></span></p>
                         </div>
                       <div class="card-actions justify-end">
                         <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
-                <!--Tringle card-->
+                <!--parallelogram card-->
                 <div class="card w-96 bg-base-100 shadow-xl">7
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                  <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Parallelogram</h2>
+                    <p class="text-center text-3xl">Area = b X h</p>
+                    <div class="flex space-x-4">
+
+                      <input class="w-24 text-2xl p-2 rounded-sm" placeholder="b" type="text" name="" id="parallelogram-base">
+
+                      <span class="mt-3">cm</span>
+
+                      <input class="w-24 text-2xl p-2 rounded-sm" placeholder="h" type="text" name="" id="parallelogram-height">
+
+                      <span class="mt-3">cm</span>
+
+                    </div>
+                      <div>
+                          <p class="text-2xl">Area: <span id="parallelogram-area">0</span>
+                            <span> cm<sup>2</sup></span></p>
                       </div>
+                    <div class="card-actions justify-end">
+                      <button onclick="caculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                     </div>
                   </div>
+                </div>
                 <!--Tringle card-->
                 <div class="card w-96 bg-base-100 shadow-xl">7
                     <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
@@ -90,5 +112,6 @@
     </main>
     <script src="./scripts/triangle-calculate.js"></script>
     <script src="./scripts/rectangle-calculate.js"></script>
+    <script src="./scripts/parallelogram-calculation.js"></script>
 </body>
 </html>
